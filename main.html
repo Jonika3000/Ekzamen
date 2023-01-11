@@ -6,12 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleMain.css">
 </head>
 
 <body>
     <!-- Main page -->
+    <!-- slider -->
+    <div class="box">
+        <div class="main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="Images/SliderImage1.png" style="width:100%">
+                </div>
 
-    
+                <div class="mySlides fade">
+                    <img src="Images/SliderImage2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Images/SliderImage3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/SliderImage4.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="row">
+                <div class="itemsContainer">
+                    <div class="item1 items">
+                        <div class="top1">
+                            <a>Інтернет</a>
+                        </div>
+                        <div class="botom1">
+                            <img src="Images/flash.png">
+                        </div>
+
+                    </div>
+                    <div class="item2 items">
+                        <div class="top1">
+                            <a>Телебачення</a>
+                        </div>
+                        <div class="botom1">
+                            <img src="Images/telek.png">
+                        </div>
+                    </div>
+                    <div class="item3 items">
+                        <div class="top1">
+                            <a>Для бізнесу</a>
+                        </div>
+                        <div class="botom1">
+                            <img src="Images/hand.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+<script src="Slider.js"></script>
 
 </html>
