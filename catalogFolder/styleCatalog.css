@@ -1,0 +1,29 @@
+/* Section 1 */
+.mainDiv{
+    padding-left: max(40px,env(safe-area-inset-left));
+    padding-right: max(40px,env(safe-area-inset-right));
+    margin-right: auto;
+    margin-left: auto;
+}
+.aUpStyle{
+    color: black;
+}
+.aUpStyle:hover{
+    color: deepskyblue;
+}
+.h1UpStyle{
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* //////////////////////////////////////////////////// */
+
+.buttonSection2{
+    background-color: transparent;
+    border: 0px;
+    font-size: 17px;
+    color: gray;
+    
+}
+.buttonSection2:hover{
+    color: deepskyblue;
+}
