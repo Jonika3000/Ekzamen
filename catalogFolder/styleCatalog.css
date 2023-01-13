@@ -17,10 +17,12 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-.notSelected{
+
+.notSelected {
     text-decoration: none;
     color: rgb(53, 53, 53);
 }
+
 .downMarg {
     margin-bottom: 20px;
 }
@@ -55,10 +57,11 @@ body {
 
 /* //////////////////////////////////////////////////// */
 
+/* Section 2 */
 #Section2 {
     padding-top: 40px;
-    width: 1000px;
-    height: 200px;
+    width: 1350px;
+    height: 120px;
 }
 
 .buttonSection2 {
@@ -81,4 +84,40 @@ body {
 .buttonSection2:hover {
     transition: 0.7s;
     color: deepskyblue;
+}
+
+/* //////////////////////////////////////////////////// */
+
+/* Section 2 */
+#Section3 {
+    width: 1350px;
+    height: 200px;
+}
+
+.divSection3 {
+    height: 300px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+}
+
+.divSec3F {
+    grid-column-start: 1;
+    width: 400px;
+}
+
+.divSec3S {
+    grid-column-start: 2;
+    border: 1px solid black;
+}
+
+.Section3Image1 {
+    background-size: contain;
+    width: 221px;
+    height: 297px;
+    background-image: url("ImagesForCatalog\image.png");
+    display: block;
+    background-position: center;
+
 }
