@@ -139,7 +139,7 @@
 }
 h1{
     color: #252525;
-    margin: 15px;
+    margin: 40px 0px;
     font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 .top1 {
@@ -193,6 +193,10 @@ h1{
     font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     color: #717171;
 }
+.news1 li h2:hover {
+    color: deepskyblue;
+    cursor: pointer;
+}
 a{
      font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
@@ -205,4 +209,8 @@ a{
     width: 100%;
     border-radius: 20px;
     display: block;
+} 
+.pic-container img{
+     display: inline-block;
+     margin: 0px 50px; 
 }
