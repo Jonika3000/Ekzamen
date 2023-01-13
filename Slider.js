@@ -26,3 +26,13 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+function picWidth() {
+    win = $(document).width();
+    width = String(Math.round(((win - 960) / 2) + 960));
+
+    $('.pic-container').css({ 'width': width });
+}
+$(window).resize(picWidth);
+picWidth();

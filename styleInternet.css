@@ -24,7 +24,8 @@ body {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.3rem;
@@ -51,6 +52,25 @@ body {
     transition: 0.5s;
     text-decoration: none;
 }
+
+.h1{
+    font-size: 47px;
+}
+
+/* select City */
+
+.activeS{
+    background-color: transparent;
+    border: 0;
+    color: #04b6ff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.select{
+    display: inline-block;
+}
+
 /* section dropCity */
 
 
@@ -68,9 +88,9 @@ body {
 }
 .p-list {
     display: flex;
-
     margin: 0 -10px;
     width: 100%;
+    padding: 0;
 }
 .p-content {
     display: flex;
@@ -136,7 +156,7 @@ body {
     width: 20px;
     height: 20px;
     
-    background-size: contain;
+    background-size:contain;
     display: inline-block;
     margin-right: 10px;
 }
@@ -144,6 +164,7 @@ body {
     background-image: url("ImagesForInternet/internet.svg");
 }
 .icon.traffic{
+    height: 10px;
     background-image: url("ImagesForInternet/traffic.svg");
 }
 .icon.upload{
@@ -165,4 +186,32 @@ body {
     font-size: 1.4rem;
     box-sizing: border-box;   
     text-align: center;
+}
+
+/* ///////////////// Select Content */
+#Section2{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.buttonSection2 {
+    background-color: transparent;
+    border: 0px;
+    font-size: 17px;
+    color: gray;
+}
+
+.Section2Active {
+    color: rgb(53, 53, 53);
+    border-bottom: 3px solid deepskyblue;
+}
+
+.buttonSection2Active:hover {
+    transition: 0.3s;
+    color: deepskyblue;
+}
+
+.buttonSection2:hover {
+    transition: 0.3s;
+    color: deepskyblue;
 }
