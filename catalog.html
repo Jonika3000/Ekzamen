@@ -10,30 +10,32 @@
 </head>
 
 <body>
-    <!-- Catalog page -->
     <hr>
-    <div class="mainDiv">
-        <!-- Section 1 start-->
+    <!-- Section 1 start-->
+    <div class="mainDiv" id="Section1">
         <section id="Section1">
-            <p><a class="aUpStyle" href="main.html">Головна</a> / Каталог</p>
+            <nav class="downMarg mMenu">
+                <li><a class="notSelected" href="main.html">Головна</a></li>
+                <p>/</p>
+                <li><a>Каталог</a></li>
+            </nav>
             <h1 class="h1UpStyle">Каталог</h1>
         </section>
-        <!-- Section 1 end-->
+    </div>
+    <!-- Section 1 end-->
 
-        <!-- Section 2 start-->
-        <section id="Section1">
+    <!-- Section 2 start-->
+    <div class="mainDiv" id="Section1">
+        <section id="Section2">
             <div class="containerSection2">
-                <button class="buttonSection2">Маршрутизатори</button>
+                <button class="buttonSection2 Section2Active" >Маршрутизатори</button>
                 <button class="buttonSection2">Медіаплеєри</button>
                 <button class="buttonSection2">ББЖ/АКБ</button>
             </div>
         </section>
-
-        
-        <!-- Section 2 end-->
     </div>
-
+    <!-- Section 2 end-->
 
 </body>
-
+<script src="catalogFolder/jsCatalog.js"></script>
 </html>
