@@ -1,24 +1,25 @@
 body {
     margin: 0;
-    font-family: BasisGrotesquePro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-.downMarg{
+.downMarg {
     margin-bottom: 20px;
 }
 
-.mainBox{
+.mainBox {
     width: 100%;
-    padding-left: max(20px,env(safe-area-inset-left));
-    padding-right: max(20px,env(safe-area-inset-right));
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
     display: block;
 }
-.mainBox .mMenu{
+.mainBox .mMenu {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -30,7 +31,7 @@ body {
     list-style: none;
     color: #ced7e4;
 }
-.mainBox .mMenu p{
+.mainBox .mMenu p {
     margin: 0;
     content: "/";
     display: inline-block;
@@ -39,10 +40,10 @@ body {
     color: #ced7e4;
     box-sizing: border-box;
 }
-.mainBox .mMenu li{
+.mainBox .mMenu li {
     color: #101836;
 }
-.notSelected{
+.notSelected {
     text-decoration: none;
 }
 .notSelected:hover {
@@ -50,26 +51,34 @@ body {
     transition: 0.5s;
     text-decoration: none;
 }
+/* section dropCity */
+
+
+.dropCity{
+    margin-bottom: 100px;
+}
+
+
 
 /* item city purchase */
 
-.p-name-item{
+.p-name-item {
     margin-bottom: 40px;
-margin-top: 5px;
+    margin-top: 5px;
 }
-.p-list{
+.p-list {
     display: flex;
-    
+
     margin: 0 -10px;
     width: 100%;
 }
-.p-content{
+.p-content {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
 }
 
-.p-li-item{
+.p-li-item {
     display: list-item;
     list-style-type: none;
     width: 33.3333334%;
@@ -77,7 +86,10 @@ margin-top: 5px;
     margin-bottom: 20px;
 }
 
-.p-background{
+.p-price-item{
+    font-size: 5rem;
+}
+.p-background {
     position: relative;
     height: 100%;
     padding: 30px;
@@ -89,14 +101,14 @@ margin-top: 5px;
     background-color: #fff;
     box-shadow: 0 8px 25px rgb(68 91 101 / 8%);
 }
-.p-head-item{
+.p-head-item {
     padding-bottom: 25px;
     border-bottom: 1px solid #ccced6;
     margin-bottom: 10px;
     shape-outside: circle(50%);
     display: block;
 }
-.p-btn-buy{
+.p-btn-buy {
     padding: 24px 20px;
     width: 100%;
     background-color: #04b6ff;
@@ -105,26 +117,52 @@ margin-top: 5px;
     color: white;
     font-family: inherit;
     font-weight: bolder;
+    
 }
-.icon-intenet{
+.p-btn-buy:hover{
+    background-color: #5fd2ff;
+    border-color: #5fd2ff;
+    transition: 0.7s;
+}
+.p-foot-item{
+    display: block;
+    margin-top: auto;
+    text-align: center;
+}
+.p-add-desc{
+    margin-bottom: 30px;
+}
+.icon {
     width: 20px;
     height: 20px;
-    background-image: url('ImagesForInternet/internet.svg');
-    background-size: cover;
-    display: block;
+    
+    background-size: contain;
+    display: inline-block;
     margin-right: 10px;
 }
-.p-internet{
+.icon.internet{
+    background-image: url("ImagesForInternet/internet.svg");
+}
+.icon.traffic{
+    background-image: url("ImagesForInternet/traffic.svg");
+}
+.icon.upload{
+    background-image: url("ImagesForInternet/upload.svg");
+}
+.p-internet {
     margin-top: 8px;
     margin-bottom: 12px;
     line-height: 20px;
-    display: inline-block;
-width: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
-.p-internet b{
-    display: block;
+
+.p-internet b {
+    display: flex;
     line-height: 20px;
-    font-size: 15px;
-    font-weight: 500;
-    
+    font-weight: bolder;
+    font-size: 1.4rem;
+    box-sizing: border-box;   
+    text-align: center;
 }

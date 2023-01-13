@@ -22,3 +22,13 @@
     padding-right: max(40px,env(safe-area-inset-right));
 }
 }
+
+@media (min-width: 768px){
+.p-price-item {
+    font-size: 5rem;
+}
+}
+@media (min-width: 576px){
+.p-price-item {
+    font-size: 4rem;
+}}
