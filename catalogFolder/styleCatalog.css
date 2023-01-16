@@ -16,6 +16,7 @@ body {
     padding-right: max(40px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .notSelected {
@@ -91,7 +92,15 @@ body {
 /* Section 2 */
 #Section3 {
     width: 1350px;
-    height: 200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+#Section3 .card {
+    width: 100%;
+    background-color: green;
 }
 
 .divSection3 {
@@ -99,25 +108,77 @@ body {
     width: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
+}
+
+.divSection3:hover {
+    color: deepskyblue;
+    transition: 0.7s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .divSec3F {
     grid-column-start: 1;
     width: 400px;
+    padding-left: 40px;
 }
 
 .divSec3S {
     grid-column-start: 2;
-    border: 1px solid black;
+}
+
+.SectionImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 221px;
+    height: 297px;
+    display: block;
+    background-position: center;
 }
 
 .Section3Image1 {
-    background-size: contain;
-    width: 221px;
-    height: 297px;
-    background-image: url("ImagesForCatalog\image.png");
-    display: block;
-    background-position: center;
+    background-image: url("../ImagesForCatalog/image.png");
+}
 
+.Section3Image2 {
+    background-image: url("../ImagesForCatalog/image1.png");
+}
+
+.Section3Image3 {
+    background-image: url("../ImagesForCatalog/image2.png");
+}
+
+.moreButton {
+    border: 1px solid deepskyblue;
+    border-radius: 30px;
+    position: relative;
+    width: 170px;
+    height: 60px;
+}
+
+.moreButton p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: calc(50% - 15px);
+    text-align: center;
+}
+
+.moreButton:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.nameP {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.priceP {
+    font-size: 50px;
+    font-weight: bold;
+    color: deepskyblue;
 }
