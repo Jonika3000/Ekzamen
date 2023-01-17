@@ -100,7 +100,8 @@ body {
 
 #Section3 .card {
     width: 100%;
-    background-color: green;
+    margin: 5px;
+
 }
 
 .divSection3 {
@@ -149,6 +150,12 @@ body {
     background-image: url("../ImagesForCatalog/image2.png");
 }
 
+.Section3Image4 {
+    background-image: url("../ImagesForCatalog/image3.png");
+}
+.Section3Image5 {
+    background-image: url("../ImagesForCatalog/image4.png");
+}
 .moreButton {
     border: 1px solid deepskyblue;
     border-radius: 30px;

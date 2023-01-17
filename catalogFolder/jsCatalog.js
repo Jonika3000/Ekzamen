@@ -1,5 +1,52 @@
 document.addEventListener("DOMContentLoaded", editButton);
 
+let routerArray = [
+    {
+        nameElem: "Роутер TP-LINK Archer C64",
+        type: "Router",
+        price: "1599",
+        imageClass: "Section3Image1"
+    },
+    {
+        nameElem: "Роутер TP-LINK Archer AX10",
+        type: "Router",
+        price: "2499",
+        imageClass: "Section3Image4"
+    }
+]
+
+let mediaArray = [
+    {
+        nameElem: "Медіаплеєр inext TV5",
+        type: "Media",
+        price: "1299",
+        imageClass: "Section3Image3"
+    },
+    {
+        nameElem: "Медіаплеєр inext TV5 ultra",
+        type: "Media",
+        price: "1599",
+        imageClass: "Section3Image3"
+    }
+]
+let BBGArray = [
+    {
+        nameElem: "Блок безперебійного живлення Full Energy BBGP-125 + акумулятор 7Ah",
+        type: "BBG",
+        price: "3999  ",
+        imageClass: "Section3Image2"
+    },
+    {
+        nameElem: "Блок безперебійного живлення Full Energy BBGP-1210 + акумулятор 18Ah",
+        type: "BBG",
+        price: "5999 ",
+        imageClass: "Section3Image5"
+    }
+]
+
+
+
+
 function editButton() {
     let tmp = document.getElementsByClassName("buttonSection2");
     for (let i = 0; i < tmp.length; i++) {
@@ -21,68 +68,32 @@ function addStyle(event) {
 
 function editCatalog(i) {
     if (i == 0) {
-        addRouter();
+        addElem("Router", routerArray);
     }
     if (i == 1) {
-        addMedia();
+        addElem("Media", mediaArray);
     }
     if (i == 2) {
-        addAKB();
+        addElem("BBG", BBGArray);
     }
 }
 
-function addRouter() {
-    document.getElementById("mainDiv3").remove();
-    let div = document.createElement('div');
-    div.className = "divSection3";
-    div.id = "mainDiv3";
-    div.innerHTML = `
-    <div class="divSec3F">
-                <p class="nameP">Роутер TP-LINK Archer C64</p>
-                <p class="priceP">1599 ₴</p>
-                <div class="moreButton"><p>Детальніше</p></div>
-    </div>
-    <div class="divSec3S">
-                <div class="SectionImage Section3Image1"></div>
-    </div>
-    `;
-    document.getElementsByClassName("card")[0].appendChild(div);
-
-    
-}
-
-function addAKB() {
-    document.getElementById("mainDiv3").remove();
-    let div = document.createElement('div');
-    div.className = "divSection3";
-    div.id = "mainDiv3";
-    div.innerHTML = `
-    <div class="divSec3F">
-                <p class="nameP">Блок безперебійного живлення Full Energy BBGP-1210 + акумулятор 18Ah</p>
-                <p class="priceP">5999 ₴</p>
-                <div class="moreButton"><p>Детальніше</p></div>
-    </div>
-    <div class="divSec3S">
-                <div class="SectionImage Section3Image2"></div>
-    </div>
-    `;
-    document.getElementsByClassName("card")[0].appendChild(div);
-}
-
-function addMedia() {
-    document.getElementById("mainDiv3").remove();
-    let div = document.createElement('div');
-    div.className = "divSection3";
-    div.id = "mainDiv3";
-    div.innerHTML = `
-    <div class="divSec3F">
-                <p class="nameP">Медіаплеєр inext TV5 ultra</p>
-                <p class="priceP">1599 ₴</p>
-                <div class="moreButton"><p>Детальніше</p></div>
-    </div>
-    <div class="divSec3S">
-                <div class="SectionImage Section3Image3"></div>
-    </div>
-    `;
-    document.getElementsByClassName("card")[0].appendChild(div);
+function addElem(typeTmp, arrTmp) {
+    for (let i = 0; i < 2; i++) {
+                document.getElementsByClassName("divSection3")[i].remove();
+                let div = document.createElement('div');
+                div.className = "divSection3";
+                div.id = "mainDiv3";
+                div.innerHTML = `
+        <div class="divSec3F">
+                    <p class="nameP">${arrTmp[i].nameElem}</p>
+                    <p class="priceP">${arrTmp[i].price} ₴</p>
+                    <div class="moreButton"><p>Детальніше</p></div>
+        </div>
+        <div class="divSec3S">
+                    <div class="SectionImage ${arrTmp[i].imageClass}"></div>
+        </div>
+        `;
+                document.getElementsByClassName("card")[i].appendChild(div);
+            }
 }
