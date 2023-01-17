@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.downMarg {
+    margin-bottom: 20px;
+}
+.box {
+    width: 100vw;
+
+}
+
+.box .main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+ .mMenu {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    list-style: none;
+    color: #ced7e4;
+}
+.mMenu p {
+    margin: 0;
+    content: "/";
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ced7e4;
+    box-sizing: border-box;
+}
+
+ .mMenu li {
+    color: #101836;
+}
+.notSelected {
+    color: #101836;
+    text-decoration: none;
+}
+
+.notSelected:hover {
+    color: #04b6ff;
+    transition: 0.5s;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+#Section2 {
+    padding-top: 40px;
+    width: 1000px;
+    height: 50px;
+}
+
+.buttonSection2 {
+    background-color: transparent;
+    border: 0px;
+    font-size: 17px;
+    color: gray;
+}
+
+.Section2Active {
+    color: rgb(53, 53, 53);
+    border-bottom: 3px solid deepskyblue;
+}
+
+.buttonSection2Active:hover {
+    transition: 0.7s;
+    color: deepskyblue;
+}
+
+.buttonSection2:hover {
+    transition: 0.7s;
+    color: deepskyblue;
+}
+.visible {
+
+    visibility: visible;
+
+}
+
+.offvisible {
+
+    visibility: hidden;
+
+}
+
+.posRel {
+
+    position: relative;
+
+}
+
+.posAbs {
+
+    z-index: 1;
+
+    position: absolute;
+
+}
+
+details {
+    margin: 20px 10px;
+}
+
+details summary {
+    color: #3f3e3e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+details div {
+    color: #646464;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+details summary:hover {
+    color: deepskyblue;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    content: "\002B";
+}
+
+details div a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
+
+details[open] div {
+    padding: .5em 1em;
+}
+
+.otstyp {
+    padding: 1em 0px;
+}
+
+ 

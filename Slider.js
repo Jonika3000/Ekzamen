@@ -36,3 +36,30 @@ function picWidth() {
 }
 $(window).resize(picWidth);
 picWidth();
+
+window.onresize = (() => {
+    var imgWidth = Math.min(
+        window.innerWidth,
+        window.innerHeight
+    );
+    document.getElementById('photo').innerHTML = '';
+    for (var i = 0; true; i++) {
+        if (
+            (document.querySelectorAll('img').length * imgWidth) <
+            (window.innerWidth * 2)) {
+            var img = new Image();
+            img.src = "https://picsum.photos/200"
+            document.getElementById('photo').append(img);
+            document.getElementById('photo').append(img);
+            document.getElementById('photo').animation =
+                `move ${document.querySelectorAll('img').length / 6}s linear infinite`
+        } else {
+            return -1;
+        }
+    }
+});
+
+function Getfaq()
+{
+    window.location.href = 'FAQ/FAQ.html';
+}
