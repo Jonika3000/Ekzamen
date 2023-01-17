@@ -162,6 +162,7 @@ body {
     position: relative;
     width: 170px;
     height: 60px;
+    cursor: pointer;
 }
 
 .moreButton p {

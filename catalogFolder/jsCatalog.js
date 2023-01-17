@@ -88,7 +88,7 @@ function addElem(typeTmp, arrTmp) {
         <div class="divSec3F">
                     <p class="nameP">${arrTmp[i].nameElem}</p>
                     <p class="priceP">${arrTmp[i].price} ₴</p>
-                    <div class="moreButton"><p>Детальніше</p></div>
+                    <div onclick="About()" class="moreButton"><p>Детальніше</p></div>
         </div>
         <div class="divSec3S">
                     <div class="SectionImage ${arrTmp[i].imageClass}"></div>
@@ -96,4 +96,8 @@ function addElem(typeTmp, arrTmp) {
         `;
                 document.getElementsByClassName("card")[i].appendChild(div);
             }
+}
+
+function About(){
+    window.location.href = 'moreRouterC64.html';
 }
