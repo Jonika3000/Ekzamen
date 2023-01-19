@@ -33,3 +33,31 @@
 .p-price-item {
     font-size: 4rem;
 }}
+
+
+/* Menu ---- */
+
+@media screen and (min-width: 768px) {.l-box-wide {
+    max-width: 740px;
+    padding-left: max(40px,env(safe-area-inset-left));
+    padding-right: max(40px,env(safe-area-inset-right));
+}
+}
+@media screen and (min-width: 992px) {.l-box-wide {
+    max-width: 980px;
+}
+}
+@media screen and (min-width: 1200px) {.l-box-wide {
+    max-width: 1140px;
+    padding-left: max(50px,env(safe-area-inset-left));
+    padding-right: max(50px,env(safe-area-inset-right));
+}
+}
+@media screen and (min-width: 1340px) {.l-box-wide {
+    max-width: 1320px;
+}
+}
+@media screen and (min-width: 1440px) {.l-box-wide {
+    max-width: 1440px;
+}
+}

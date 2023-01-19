@@ -1,16 +1,39 @@
-document.addEventListener("DOMContentLoaded", EditButton);
+document.addEventListener("DOMContentLoaded", editButton);
 
-function EditButton() {
+function editButton() {
     let tmp = document.getElementsByClassName("buttonSection2");
     for (let i = 0; i < tmp.length; i++) {
-        tmp[i].addEventListener("click", (event) => AddStyle(event));
+        tmp[i].addEventListener("click", (event) => addStyle(event));
     }
 }
 
-function AddStyle(event) {
+function addStyle(event) {
     let tmp = document.getElementsByClassName("buttonSection2");
+
+
     for (let i = 0; i < tmp.length; i++) {
-        tmp[i].classList.remove("Section2Active");
+        if (tmp[i] != event.target) {
+            tmp[i].classList.remove("Section2Active");
+        }
+        else if (!tmp[i].classList.contains("Section2Active")) {
+            event.target.classList.add("Section2Active");
+            checkContain();
+        }
     }
-    event.target.classList.add("Section2Active");
+
+
 }
+function checkContain() {
+    let vis = document.getElementsByClassName("p-content");
+    for (let i = 0; i < vis.length; i++) {
+        if (vis[i].classList.contains("visible")) {
+            vis[i].classList.remove("visible");
+            vis[i].classList.add("offvisible");
+        }
+        else {
+            vis[i].classList.add("visible");
+            vis[i].classList.remove("offvisible");
+        }
+    }
+}
+
