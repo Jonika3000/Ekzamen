@@ -101,3 +101,8 @@ function addElem(typeTmp, arrTmp) {
 function About(){
     window.location.href = 'moreRouterC64.html';
 }
+
+function Getfaq()
+{
+    window.location.href = 'FAQ/FAQ.html';
+}
