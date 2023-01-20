@@ -42,6 +42,7 @@ let BBGArray = [
         price: "5999 ",
         imageClass: "Section3Image5"
     }
+    
 ]
 
 
@@ -68,18 +69,18 @@ function addStyle(event) {
 
 function editCatalog(i) {
     if (i == 0) {
-        addElem("Router", routerArray);
+        addElem( routerArray);
     }
     if (i == 1) {
-        addElem("Media", mediaArray);
+        addElem(mediaArray);
     }
     if (i == 2) {
-        addElem("BBG", BBGArray);
+        addElem(BBGArray);
     }
 }
 
-function addElem(typeTmp, arrTmp) {
-    for (let i = 0; i < 2; i++) {
+function addElem(arrTmp) {
+    for (let i = 0; i < arrTmp.length; i++) {
                 document.getElementsByClassName("divSection3")[i].remove();
                 let div = document.createElement('div');
                 div.className = "divSection3";
