@@ -1,9 +1,11 @@
 body {
     margin: 0;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+    font-family: "Basis Grotesque Pro", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
         Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 1.4rem;
     font-weight: 400;
+    background-color: #fbfcfe;
+    color:#101836
 }
 
 .downMarg {
@@ -16,6 +18,7 @@ body {
     padding-right: max(20px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
+    margin-top: 190px;
     box-sizing: border-box;
     display: block;
 }
@@ -28,7 +31,8 @@ body {
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
     list-style: none;
     color: #ced7e4;
 }
@@ -45,6 +49,7 @@ body {
     color: #101836;
 }
 .notSelected {
+    color: #101836;
     text-decoration: none;
 }
 .notSelected:hover {
@@ -53,13 +58,17 @@ body {
     text-decoration: none;
 }
 
-.h1{
-    font-size: 47px;
+.h1 {
+    font-size: 4.4rem;
+}
+h2{
+font-size: 3.2rem;
+font-weight:lighter;
 }
 
 /* select City */
 
-.activeS{
+.activeS {
     background-color: transparent;
     border: 0;
     color: #04b6ff;
@@ -67,18 +76,37 @@ body {
     font-weight: bold;
 }
 
-.select{
+#cityes {
     display: inline-block;
+    background-color: transparent;
+    color: #04b6ff;
+    border: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#cityes option {
+    color: black;
+    border: 0;
+    font-weight: 300;
+    font-size: 0.4em;
+}
+#cityes option:hover{
+    background: transparent;
+    color: #000000;
+    transition: 0.5s;
+}
+#cityes:active{
+    color:aquamarine;
+    background-color: #101836;
 }
 
 /* section dropCity */
 
-
-.dropCity{
+.dropCity {
     margin-bottom: 100px;
+    height: 1000px;
+    width: auto;
 }
-
-
 
 /* item city purchase */
 
@@ -89,7 +117,7 @@ body {
 .p-list {
     display: flex;
     margin: 0 -10px;
-    width: 100%;
+
     padding: 0;
 }
 .p-content {
@@ -101,12 +129,12 @@ body {
 .p-li-item {
     display: list-item;
     list-style-type: none;
-    width: 33.3333334%;
+    width: 350px;
     padding: 0 10px;
     margin-bottom: 20px;
 }
 
-.p-price-item{
+.p-price-item {
     font-size: 5rem;
 }
 .p-background {
@@ -137,37 +165,36 @@ body {
     color: white;
     font-family: inherit;
     font-weight: bolder;
-    
 }
-.p-btn-buy:hover{
+.p-btn-buy:hover {
     background-color: #5fd2ff;
     border-color: #5fd2ff;
     transition: 0.7s;
 }
-.p-foot-item{
+.p-foot-item {
     display: block;
     margin-top: auto;
     text-align: center;
 }
-.p-add-desc{
+.p-add-desc {
     margin-bottom: 30px;
 }
 .icon {
     width: 20px;
     height: 20px;
-    
-    background-size:contain;
+
+    background-size: contain;
     display: inline-block;
     margin-right: 10px;
 }
-.icon.internet{
+.icon.internet {
     background-image: url("ImagesForInternet/internet.svg");
 }
-.icon.traffic{
+.icon.traffic {
     height: 10px;
     background-image: url("ImagesForInternet/traffic.svg");
 }
-.icon.upload{
+.icon.upload {
     background-image: url("ImagesForInternet/upload.svg");
 }
 .p-internet {
@@ -175,7 +202,7 @@ body {
     margin-bottom: 12px;
     line-height: 20px;
     display: flex;
-    width: 100%;
+
     align-items: center;
 }
 
@@ -184,14 +211,15 @@ body {
     line-height: 20px;
     font-weight: bolder;
     font-size: 1.4rem;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     text-align: center;
 }
 
 /* ///////////////// Select Content */
-#Section2{
+#Section2 {
     margin-bottom: 20px;
     padding-bottom: 10px;
+    height: 40px;
 }
 
 .buttonSection2 {
@@ -214,4 +242,53 @@ body {
 .buttonSection2:hover {
     transition: 0.3s;
     color: deepskyblue;
+}
+
+/* Add class //////////////////// */
+.visible {
+    visibility: visible;
+}
+.offvisible {
+    visibility: hidden;
+}
+.posRel {
+    position: relative;
+}
+.posAbs {
+    z-index: 1;
+    position: absolute;
+}
+
+
+
+.s-content ul li:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #04b6ff;
+    margin-right: 10px;
+    left: 0;
+    top: 11;
+}
+.s-content ol li, .s-content ul li {
+    position: relative;
+    padding-left: 20px;
+}
+.s-content ol li:before {
+    content: counter(listNumeric) ". ";
+    counter-increment: listNumeric;
+    color: #04b6ff;
+    font-weight: 400;
+    position: absolute;
+    top: 3px;
+    font-size: 1.2rem;
+    left: 0;
+}
+.s-content ol {
+    padding-left: 10px;
+    counter-reset: listNumeric;
 }
