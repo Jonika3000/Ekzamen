@@ -292,3 +292,21 @@ font-weight:lighter;
     padding-left: 10px;
     counter-reset: listNumeric;
 }
+
+
+#buttonFaq {
+    border: deepskyblue 3px solid;
+    border-radius: 40px;
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+#buttonFaq:hover {
+    background-color: deepskyblue;
+    color: white;
+}

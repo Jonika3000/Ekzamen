@@ -304,7 +304,7 @@ details[open] div {
     padding: 1em 0px;
 }
 
-buttonFaq {
+#buttonFaq {
     border: deepskyblue 3px solid;
     border-radius: 40px;
     width: 100%;
@@ -316,7 +316,7 @@ buttonFaq {
     font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-button:hover {
+#buttonFaq:hover {
     background-color: deepskyblue;
     color: white;
 }
