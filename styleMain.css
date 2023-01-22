@@ -97,7 +97,7 @@
 
 .box {
     width: 100vw;
-
+margin-top: 190px;
 }
 
 .box .main {
@@ -298,7 +298,7 @@ details[open] div {
     padding: 1em 0px;
 }
 
-button {
+buttonFaq {
     border: deepskyblue 3px solid;
     border-radius: 40px;
     width: 100%;
