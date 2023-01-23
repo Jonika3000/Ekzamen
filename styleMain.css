@@ -96,7 +96,7 @@
 }
 
 .box {
-    width: 100vw;
+    width: 100%;
 margin-top: 190px;
 }
 
@@ -158,7 +158,13 @@ h1 {
     font-weight: 500;
     font-size: 20px;
 }
-
+.top1 a {
+    color: white;
+}
+.top1 a:hover {
+    color: white;
+    cursor: default;
+}
 .botom1 {
     align-self: flex-start;
 }
@@ -176,6 +182,7 @@ h1 {
     margin-right: 6%;
     margin-right: calc(5% + 10px);
     margin-left: 5%;
+    
 }
 
 .itemsContainer {
