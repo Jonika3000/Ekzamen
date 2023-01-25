@@ -12,11 +12,12 @@ body {
     height: 100px;
 }
 
-.mainDiv {
+.mainDiv { 
     padding-left: max(40px, env(safe-area-inset-left));
     padding-right: max(40px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .notSelected {
@@ -121,7 +122,7 @@ body {
     height: 500px;
 }
 
-.mainDiv3 {
+.mainDiv3 { 
     width: 70%;
 }
 
