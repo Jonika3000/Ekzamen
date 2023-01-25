@@ -9,7 +9,7 @@ body {
 
 #Section1 {
     width: 1350px;
-    height: 200px;
+    height: 100px;
 }
 
 .mainDiv {
@@ -61,28 +61,28 @@ body {
     height: 500px;
 }
 
-.mainDiv2{
+.mainDiv2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.WithText{
+.WithText {
     grid-column-start: 1;
     width: 800px;
     height: 500px;
 }
 
-.WithImg{
+.WithImg {
     grid-column-start: 2;
     background-image: url(../ImagesForCatalog/image.png);
 }
 
-.headerH1{
+.headerH1 {
     padding-top: 90px;
     font-size: 50px;
 }
 
-.priceP{
+.priceP {
     color: deepskyblue;
     font-size: 70px;
     font-weight: bold;
@@ -111,4 +111,40 @@ body {
     background-color: deepskyblue;
     color: white;
 }
+
 /* Section 2 end ///////////////////////////////////// */
+
+
+/* Section 3 */
+#Section3 {
+    width: 1350px;
+    height: 500px;
+}
+
+.mainDiv3 {
+    width: 70%;
+}
+
+.mainDiv3 li {
+    color: deepskyblue;
+    padding: 10px;
+}
+
+.mainDiv3 li span {
+    color: black;
+}
+
+.image {
+    width: 950px;
+}
+
+/* Section 3 end ///////////////////////////////////// */
+
+/* Section 4 */
+
+#Section4 {
+    height: 300px;
+    width: 1350px;
+}
+
+/* Section 4 end ///////////////////////////////////// */
