@@ -121,6 +121,7 @@ font-weight:lighter;
     padding: 0;
 }
 .p-content {
+    padding: 20px 0px;
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -245,10 +246,10 @@ font-weight:lighter;
 }
 
 /* Add class //////////////////// */
-.visible {
+.visible { 
     visibility: visible;
 }
-.offvisible {
+.offvisible { 
     visibility: hidden;
 }
 .posRel {
