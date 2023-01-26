@@ -16,8 +16,7 @@ function editButton() {
 
 
 
-function addStyle(event) {
-
+function addStyle(event) { 
     let tmp = document.getElementsByClassName("buttonSection2");
 
 
