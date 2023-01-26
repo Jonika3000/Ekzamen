@@ -107,7 +107,7 @@ body {
 
 .divSection3 {
     height: 300px;
-    width: 700px;
+    width: 630px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 30px;
@@ -133,7 +133,7 @@ body {
 .SectionImage {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 221px;
+    width: 200px;
     height: 297px;
     display: block;
     background-position: center;
