@@ -119,11 +119,12 @@ body {
 /* Section 3 */
 #Section3 {
     width: 1350px;
-    height: 500px;
+    height: 100%;
 }
 
 .mainDiv3 { 
     width: 70%;
+    margin: 0 auto;
 }
 
 .mainDiv3 li {
@@ -144,8 +145,8 @@ body {
 /* Section 4 */
 
 #Section4 {
-    height: 300px;
-    width: 1350px;
+    height: 100%;
+    width: 100%;
 }
 
 /* Section 4 end ///////////////////////////////////// */
