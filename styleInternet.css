@@ -18,9 +18,10 @@ body {
     padding-right: max(20px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
-    margin-top: 190px;
+    margin-top: 170px;
     box-sizing: border-box;
     display: block;
+    margin-bottom: 150px;
 }
 .mainBox .mMenu {
     margin-block-start: 1em;
@@ -60,8 +61,11 @@ body {
 
 .h1 {
     font-size: 4.4rem;
+    margin-top: 7px;
+    margin-bottom: 20px;
 }
 h2{
+    margin: 0;
 font-size: 3.2rem;
 font-weight:lighter;
 }

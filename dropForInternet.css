@@ -19,6 +19,7 @@
     background-size: contain;
     display: inline-block;
     top: 3px;
+    transition: 0.2s;
 }
 
 /* Catalog class */
@@ -100,6 +101,7 @@
 
 .turn180 {
     transform: rotate(180deg);
+    transition: 0.2s;
 }
 
 .o-select {
