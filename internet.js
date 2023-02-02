@@ -35,5 +35,5 @@ function checkContain() {
             vis[i].classList.remove("offvisible");
         }
     }
-}
+} 
 
