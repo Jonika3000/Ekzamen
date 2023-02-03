@@ -537,7 +537,8 @@
                             Оплата здійснюється за весь календарний місяць незалежно від кількості днів користування.
                         </div>
                     </details>
-                    <button id="buttonFaq">Весь FAQ</button>
+                    <button id="buttonFaq" onclick="Getfaq()">Весь FAQ</button>
+
                 </div>
             </div>
         </section>
@@ -581,6 +582,11 @@
     <script src="internet.js"></script>
     <script src="dropInternet.js"></script>
     <script src="menu.js"></script>
+    <script>
+        function Getfaq() {
+                window.location.href = 'FAQ/FAQ.html';
+            }
+    </script>
 </body>
 
 </html>

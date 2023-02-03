@@ -3,7 +3,7 @@
     margin-bottom: 20px;
 }
 .box {
-    width: 100vw;
+    width: 100%;
 }
 
 #FAQ {
@@ -111,7 +111,7 @@ details {
 details summary {
     color: #000000;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 details div {
