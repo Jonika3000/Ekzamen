@@ -112,11 +112,11 @@
 
                         <div class="c-banner__contacts is-mobile-hide">
                             <div class="c-contacts">
-                                
-                                        <p>Гаряча лінія</p>
-                                        <a id="support-phone-mobile" href="tel:+380957381188"
-                                            class="c-contacts__link">095 738 11 88</a>
-                                    
+
+                                <p>Гаряча лінія</p>
+                                <a id="support-phone-mobile" href="tel:+380957381188" class="c-contacts__link">095 738
+                                    11 88</a>
+
                             </div>
                         </div>
                         <button class="btn btn-sm btn-warning is-mobile-hide" type="button" aria-label="Modal"
@@ -214,33 +214,15 @@
                         <option value="102">Юнівка</option>
                     </select>&nbsp;
                     <button class="btnForDrop" onclick="checkDropDown()">
-                        Луцьк
+                        <p class="btnDropContent">Луцьк</p>
                         <div class="dropArrow"></div>
                     </button>
                     <div class="dropCatalog offvisible">
                         <ul class="dropList">
-                            <li><button class="dropItem">Луцьк</button></li>
-                            <li><button class="dropItem">Струмівкаfghghfghfghfghfghfg</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
+                            <li><button class="dropItemSelect" onclick="selectDrop(this)">Луцьк</button></li>
+                            <li><button class="dropItem" onclick="selectDrop(this)">Струмівка</button></li>
+                            <li><button class="dropItem" onclick="selectDrop(this)">Лище</button></li>
 
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
-                            <li><button class="dropItem">Лище</button></li>
                             <div class="ps__rail-x" style="left: 0px; bottom: -352px;">
                                 <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
                             </div>
@@ -274,7 +256,7 @@
                         <div class="p-background">
                             <header class="p-head-item">
                                 <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>179<small>/міс</small></b></div>
+                                <div class="p-price-item"><b>179 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -290,7 +272,7 @@
                                     </div>
                                 </div>
                             </header>
-                            <div class="p-add-desc"></div>
+                            
                             <footer class="p-foot-item">
                                 <button class="p-btn-buy">Підключити</button>
                             </footer>
@@ -299,8 +281,9 @@
                     <li class="p-li-item">
                         <div class="p-background">
                             <header class="p-head-item">
-                                <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>179<small>/міс</small></b></div>
+                                <span class="p-tarrif__badge"><b>Акція</b></span>
+                                <div class="p-name-item"><b>Комфорт</b></div>
+                                <div class="p-price-item"><span class="p-tarrif__price-old">279₴/міс</span><b>99 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -316,6 +299,7 @@
                                     </div>
                                 </div>
                             </header>
+                            <div class="p-add-desc">Знижка на перші 3 місяці. Знижка діє, якщо Ви підключаєте послугу інтернет вперше.<p>Деталі</p></div>
                             <footer class="p-foot-item">
                                 <button class="p-btn-buy">Підключити</button>
                             </footer>
@@ -324,8 +308,8 @@
                     <li class="p-li-item">
                         <div class="p-background">
                             <header class="p-head-item">
-                                <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>179<small>/міс</small></b></div>
+                                <div class="p-name-item"><b>Гігабіт</b></div>
+                                <div class="p-price-item"><b>299 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -355,7 +339,7 @@
                         <div class="p-background">
                             <header class="p-head-item">
                                 <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>179<small>/міс</small></b></div>
+                                <div class="p-price-item"><b>349 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -371,7 +355,7 @@
                                     </div>
                                 </div>
                             </header>
-                            <div class="p-add-desc"></div>
+                            
                             <footer class="p-foot-item">
                                 <button class="p-btn-buy">Підключити</button>
                             </footer>
@@ -380,8 +364,9 @@
                     <li class="p-li-item">
                         <div class="p-background">
                             <header class="p-head-item">
-                                <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>99<small>/міс</small></b></div>
+                                <span class="p-tarrif__badge"><b>Акція</b></span>
+                                <div class="p-name-item"><b>Комфорт</b></div>
+                                <div class="p-price-item"><span class="p-tarrif__price-old">369₴/міс</span><b>99 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -397,6 +382,7 @@
                                     </div>
                                 </div>
                             </header>
+                            <div class="p-add-desc">Знижка на перші 3 місяці. Знижка діє, якщо Ви підключаєте послугу інтернет вперше.<p>Деталі</p></div>
                             <footer class="p-foot-item">
                                 <button class="p-btn-buy">Підключити</button>
                             </footer>
@@ -405,8 +391,8 @@
                     <li class="p-li-item">
                         <div class="p-background">
                             <header class="p-head-item">
-                                <div class="p-name-item"><b>Мінімум</b></div>
-                                <div class="p-price-item"><b>349<small>/міс</small></b></div>
+                                <div class="p-name-item"><b>Гігабіт</b></div>
+                                <div class="p-price-item"><b>419 ₴<small>/міс</small></b></div>
                                 <div class="p-desc-item">
                                     <div class="p-internet">
                                         <div class="icon internet"></div>
@@ -433,8 +419,8 @@
         <section class="l-section">
             <h2 class="h2"></h2>
             <div class="s-content">
-                <p>Користуючись цими тарифами, Ви автоматично погоджуєтесь з <a
-                        href="">правилами користування</a>.<br>Тарифи «Комфорт» та
+                <p>Користуючись цими тарифами, Ви автоматично погоджуєтесь з <a href="">правилами
+                        користування</a>.<br>Тарифи «Комфорт» та
                     «Гігабіт» надається при наявності технічної можливості.</p>
                 <h2>Вартість підключення послуг</h2>
                 <h3>Багатоквартирний будинок</h3>
@@ -506,46 +492,57 @@
                     <h1>FAQ</h1>
                     <details>
                         <summary>Як підключити Інтернет від «Волинських Оптичних Мереж»?</summary>
-                        <div> 
-                        <p class="otstyp">Щоб підключити домашній Інтернет або Інтернет з цифровим Телебаченням у Луцьку та Луцькому районі потрібно:
-                        </p>
-                        <a>1.</a> На <a href="main.html">головній сторінці</a>, сторінці <a href="internetFolder/internet.html">Інтернет</a> або Інтернет+ТВ обрати населений пункт, сектор та натиснути «Підключити» на
-                        тарифі, який бажаєте обрати;
-                        <p></p>
-                        <a>2.</a> У випадаючому вікні заповнюєте всі необхідні дані та натискаєте «Подати заявку»;
-                        <p></p>
-                        <a>3.</a> Після подання заявки на підключення з Вами зв’яжеться менеджер для уточнення технічної можливості підключення та
-                        зорієнтує щодо терміну підключення;
-                        <p></p>
-                        <a>4.</a> За день до підключення менеджер зателефонує узгодити з Вами день та годину, коли монтажна бригада зможе приїхати для
-                        проведення робіт.<p></p>
-                        Також підключити домашній Інтернет можна, зателефонувавши на гарячу лінію за телефоном <a>(095) 738-11-88</a>.
+                        <div>
+                            <p class="otstyp">Щоб підключити домашній Інтернет або Інтернет з цифровим Телебаченням у
+                                Луцьку та Луцькому районі потрібно:
+                            </p>
+                            <a>1.</a> На <a href="main.html">головній сторінці</a>, сторінці <a
+                                href="internetFolder/internet.html">Інтернет</a> або Інтернет+ТВ обрати населений пункт,
+                            сектор та натиснути «Підключити» на
+                            тарифі, який бажаєте обрати;
+                            <p></p>
+                            <a>2.</a> У випадаючому вікні заповнюєте всі необхідні дані та натискаєте «Подати заявку»;
+                            <p></p>
+                            <a>3.</a> Після подання заявки на підключення з Вами зв’яжеться менеджер для уточнення
+                            технічної можливості підключення та
+                            зорієнтує щодо терміну підключення;
+                            <p></p>
+                            <a>4.</a> За день до підключення менеджер зателефонує узгодити з Вами день та годину, коли
+                            монтажна бригада зможе приїхати для
+                            проведення робіт.<p></p>
+                            Також підключити домашній Інтернет можна, зателефонувавши на гарячу лінію за телефоном
+                            <a>(095) 738-11-88</a>.
                         </div>
                     </details>
                     <details>
                         <summary>Використовуючи яку технологію здійснюється підключення нових абонентів?</summary>
                         <div>
-                            Всіх нових абонентів ми підключаємо, використовуючи оптоволоконну технологію (PON). Вона дозволяє користуватися
-                            Інтернетом на максимально можливій швидкості до 1 000 Мбіт/с на завантаження та вивантаження даних. Це дозволить Вам
-                            швидко завантажувати файли великого розміру, грати онлайн ігри та без затримок переглядати онлайн фільми та відеоролики
+                            Всіх нових абонентів ми підключаємо, використовуючи оптоволоконну технологію (PON). Вона
+                            дозволяє користуватися
+                            Інтернетом на максимально можливій швидкості до 1 000 Мбіт/с на завантаження та вивантаження
+                            даних. Це дозволить Вам
+                            швидко завантажувати файли великого розміру, грати онлайн ігри та без затримок переглядати
+                            онлайн фільми та відеоролики
                             без обмеження трафіку.
                         </div>
                     </details>
                     <details>
                         <summary>Як відбувається оплата за користування послугами?</summary>
                         <div>
-                        Оплата послуг здійснюється на умовах 100% передоплати станом на 1-е число кожного місяця. Якщо на особовому рахунку
-                        недостатньо коштів, надання послуг обмежується до моменту оплати в повному обсязі за поточний місяць.
-                        
-                        Оплата здійснюється за весь календарний місяць незалежно від кількості днів користування.
+                            Оплата послуг здійснюється на умовах 100% передоплати станом на 1-е число кожного місяця.
+                            Якщо на особовому рахунку
+                            недостатньо коштів, надання послуг обмежується до моменту оплати в повному обсязі за
+                            поточний місяць.
+
+                            Оплата здійснюється за весь календарний місяць незалежно від кількості днів користування.
                         </div>
                     </details>
                     <button id="buttonFaq">Весь FAQ</button>
                 </div>
             </div>
-           </section>
+        </section>
     </div>
-    
+
     <footer class="footer">
         <div class="contFooter">
             <div class="rowFooter">
