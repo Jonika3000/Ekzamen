@@ -201,19 +201,48 @@ h1 {
 .news1 ul {
     display: grid;
     width: 100%;
-    gap: 2em 1em;
+    gap: 6%;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.news1 li {
-    list-style: none;
-    display: flex;
+.news1 li { 
+    list-style: none; 
+   /*  justify-content: center; */
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    
+    text-align: left; 
+    border-radius: 25px;
 }
+.news1 li img:hover{
+box-shadow: 10px 15px 15px rgb(165, 165, 165);
+cursor: pointer;
+}
+.news1 .item{
+display: grid;
 
+min-height: 600px;
+
+grid-template-rows: auto 6em;
+
+}
+.news1 .item .imageN  {
+width: 100%;
+margin: 0 auto;  
+height: 100%;
+}
+.news1 .item .textN {  
+ height: 100%;
+}
+.news1 .item .textN a{
+    line-height: 1;
+}
+.news1 .item .textN h2{
+    line-height: 1;
+}
+.news1 .item .imageN img{
+width: 100%;
+height: 100%;
+}
 .news1 li a {
     font-weight: 500;
     font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -231,10 +260,11 @@ a {
 
 .news1 li h2 {
     font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    width: 400px;
+    
 }
 
 .news1 img {
+    padding: 0;
     height: 500px;
     width: 80%;
     border-radius: 20px;
