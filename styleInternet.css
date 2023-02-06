@@ -147,6 +147,11 @@ small{
     position: relative;
     font-size: 5rem;
 }
+
+.l-section{
+    margin-top: 300px;
+}
+
 .p-background {
     position: relative;
     height: 100%;

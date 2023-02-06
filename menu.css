@@ -208,8 +208,15 @@ li {
     color: #fff;
     background-color: #ff7113;
     border-color: #ff7113;
-    
+    cursor: pointer;
 }
+
+.btn-warning:hover {
+    background-color: #ff9f5e;
+    border-color: #ff9f5e;
+    transition: 0.5s;
+}
+
 
 .t-border {
     width: 100%;
