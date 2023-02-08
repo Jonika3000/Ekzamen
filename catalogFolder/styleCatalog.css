@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: "Basis Grotesque Pro", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -17,7 +18,6 @@ body {
     padding-right: max(40px, env(safe-area-inset-right));
     margin-right: auto;
     margin-left: auto;
-
 }
 
 .notSelected {
@@ -54,7 +54,7 @@ body {
 
 .h1UpStyle {
     font-size: 5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* //////////////////////////////////////////////////// */
@@ -102,7 +102,6 @@ body {
 #Section3 .card {
     width: 100%;
     margin: 5px;
-
 }
 
 .divSection3 {
@@ -192,11 +191,7 @@ body {
     color: deepskyblue;
 }
 
-
-
-
-
-#Section4{
+#Section4 {
     padding-bottom: 50px;
     width: 1350px;
     height: auto;
@@ -206,25 +201,26 @@ details summary {
     color: #3f3e3e;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 details div {
     color: #646464;
     font-size: 1.3rem;
     font-weight: 300;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 details summary:hover {
     color: deepskyblue;
     cursor: pointer;
     font-size: 1.5rem;
-
 }
 
 summary {
-    padding: .5em 1.3rem;
+    padding: 0.5em 1.3rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -246,7 +242,7 @@ details div a {
 
 details[open] summary {
     border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 details[open] summary:after {
@@ -254,7 +250,7 @@ details[open] summary:after {
 }
 
 details[open] div {
-    padding: .5em 1em;
+    padding: 0.5em 1em;
 }
 
 .otstyp {
@@ -270,7 +266,8 @@ details[open] div {
     cursor: pointer;
     font-size: 1.3rem;
     font-weight: 500;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .buttonFAQ:hover {
