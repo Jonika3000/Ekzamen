@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: "Basis Grotesque Pro", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: "Basis Grotesque Pro", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 1.4rem;
     font-weight: 400;
     background-color: #fbfcfe;
-    color:#101836
+    color: #101836;
 }
 
 .downMarg {
@@ -64,10 +64,10 @@ body {
     margin-top: 7px;
     margin-bottom: 20px;
 }
-h2{
+h2 {
     margin: 0;
-font-size: 3.2rem;
-font-weight:lighter;
+    font-size: 3.2rem;
+    font-weight: lighter;
 }
 
 /* select City */
@@ -94,13 +94,13 @@ font-weight:lighter;
     font-weight: 300;
     font-size: 0.4em;
 }
-#cityes option:hover{
+#cityes option:hover {
     background: transparent;
     color: #000000;
     transition: 0.5s;
 }
-#cityes:active{
-    color:aquamarine;
+#cityes:active {
+    color: aquamarine;
     background-color: #101836;
 }
 
@@ -139,7 +139,7 @@ font-weight:lighter;
     padding: 0 10px;
     margin-bottom: 20px;
 }
-small{
+small {
     font-size: 20px;
 }
 .p-price-item {
@@ -148,7 +148,7 @@ small{
     font-size: 5rem;
 }
 
-.l-section{
+.l-section {
     margin-top: 300px;
 }
 
@@ -196,8 +196,8 @@ small{
     font-weight: 400;
     font-size: 16px;
 }
-.p-add-desc p{
-    color:#04b6ff;
+.p-add-desc p {
+    color: #04b6ff;
     font-weight: 500;
     font-size: 17px;
     margin-bottom: 35px;
@@ -218,7 +218,7 @@ small{
 }
 .p-tarrif__price-old {
     font-size: 20px;
-    position:absolute;
+    position: absolute;
     display: inline-flex;
     align-items: baseline;
     flex-wrap: wrap;
@@ -249,7 +249,7 @@ small{
     margin-bottom: 12px;
     line-height: 20px;
     display: flex;
-font-weight: 400;
+    font-weight: 400;
 
     align-items: center;
 }
@@ -293,10 +293,10 @@ font-weight: 400;
 }
 
 /* Add class //////////////////// */
-.visible { 
+.visible {
     visibility: visible;
 }
-.offvisible { 
+.offvisible {
     visibility: hidden;
 }
 .posRel {
@@ -306,8 +306,6 @@ font-weight: 400;
     z-index: 1;
     position: absolute;
 }
-
-
 
 .s-content ul li:before {
     content: "";
@@ -322,7 +320,8 @@ font-weight: 400;
     left: 0;
     top: 11;
 }
-.s-content ol li, .s-content ul li {
+.s-content ol li,
+.s-content ul li {
     position: relative;
     padding-left: 20px;
 }
@@ -341,7 +340,6 @@ font-weight: 400;
     counter-reset: listNumeric;
 }
 
-
 #buttonFaq {
     border: deepskyblue 3px solid;
     border-radius: 40px;
@@ -351,7 +349,8 @@ font-weight: 400;
     cursor: pointer;
     font-size: 1.3rem;
     font-weight: 500;
-    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: BasisGrotesquePro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+        Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 #buttonFaq:hover {
@@ -359,3 +358,30 @@ font-weight: 400;
     color: white;
 }
 
+.dropCatalog ::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    width: 65px;
+    background-color: transparent;
+}
+
+.dropCatalog ::-webkit-scrollbar-track {
+    /* 3 - трек */
+    background-color: #9da1ae;
+    border: 32px solid white;
+
+    border-radius: 1.6rem;
+}
+
+.dropCatalog ::-webkit-scrollbar-track-piece {
+    /* 4 - видимая часть трека */
+
+    background-color: transparent;
+}
+
+.dropCatalog ::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+
+    border-radius: 35px;
+    border: 20px solid rgb(255, 255, 255);
+    background-color: #04b6ff;
+}
